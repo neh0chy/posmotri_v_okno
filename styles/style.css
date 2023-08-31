@@ -143,7 +143,7 @@ ol {
 .search-form__checkbox[type="checkbox"]:active
   + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   background-color: #ffffff;
   inset: 1px;
 }
@@ -162,6 +162,7 @@ ol {
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
+  margin-top: 3px;
 }
 
 .content__accent {
@@ -179,7 +180,7 @@ ol {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 25px;
 }
 
 .content__list {
@@ -189,7 +190,7 @@ ol {
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 
 .content__card-link {
@@ -247,7 +248,7 @@ ol {
 }
 
 .content__video-card-description {
-  padding-top: 6px;
+  padding-top: 4px;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;

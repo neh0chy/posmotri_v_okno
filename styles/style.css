@@ -143,7 +143,6 @@ ol {
 .search-form__checkbox[type="checkbox"]:active
   + .search-form__pseudo-checkbox::before {
   content: "";
-  /* position: absolute; */
   background-color: #ffffff;
   inset: 1px;
 }

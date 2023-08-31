@@ -75,6 +75,7 @@ ol {
 
 .search-form__fieldset {
   border: none;
+  margin-bottom: 5px;
 }
 
 .search-form__fieldset-title {
@@ -113,6 +114,7 @@ ol {
 .search-form__textfield {
   all: unset;
   color: rgba(255, 255, 255, 0.70);
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -140,7 +142,7 @@ ol {
   margin-right: 5px;
 }
 
-.search-form__checkbox[type="checkbox"]:checked
+.search-form__checkbox[type="checkbox"]:active
   + .search-form__pseudo-checkbox::before {
   content: "";
   position: absolute;

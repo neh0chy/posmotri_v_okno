@@ -96,7 +96,6 @@ ol {
 .search-form__checkbox-list > .search-form__label:hover {
   cursor: pointer;
   text-decoration: underline;
-  padding-bottom: 5px;
 }
 
 .search-form__label:focus {
@@ -149,11 +148,6 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #ffffff;
-  outline-offset: 2px;
 }
 
 

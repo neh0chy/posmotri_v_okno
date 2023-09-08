@@ -57,7 +57,7 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-block-end: 16px;
 }
 
 .result__video {
@@ -78,7 +78,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-bottom: 3px;
+  padding-block-end: 3px;
 }
 
 .search-form__fieldset-title {
@@ -118,7 +118,7 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid #ffffff;
-  margin-right: 5px;
+  margin-inline-end: 5px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -164,7 +164,7 @@ ol {
   font-weight: 700;
   line-height: 92%;
   text-transform: uppercase;
-  margin-top: 3px;
+  margin-block-start: 3px;
 }
 
 .content__accent {
@@ -187,8 +187,12 @@ ol {
 
 .content__list {
   position: relative;
-  height: 298px;
+  block-size: 298px;
   overflow: scroll;
+}
+
+.content__list::-webkit-scrollbar { 
+  display: none; 
 }
 
 .content__list-item {
@@ -196,7 +200,7 @@ ol {
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-block-end: 32px;
 }
 
 .content__card-link {
@@ -204,6 +208,24 @@ ol {
   text-decoration: none;
   color: #ffffff;
   margin: 2px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #ffffff;
+  outline-offset: 1px;
 }
 
 .content__card-link:focus {
@@ -225,23 +247,6 @@ ol {
   align-items: flex-start;
 }
 
-.content__video-card:hover {
-  text-decoration: underline;
-}
-
-.content__video-card:active {
-  text-decoration: none;
-}
-
-.content__video-card:focus {
-  outline: none;
-}
-
-.content__video-card:focus-visible {
-  outline: 1px solid #ffffff;
-  outline-offset: 1px;
-}
-
 .content__video-card-title {
   color: #ffffff;
   font-family: Oswald, Arial, sans-serif;
@@ -253,7 +258,7 @@ ol {
 }
 
 .content__video-card-description {
-  padding-top: 4px;
+  padding-block-start: 4px;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -268,7 +273,7 @@ ol {
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
-  padding-top: 3px;
+  padding-block-start: 3px;
 }
 
 
